@@ -11,11 +11,9 @@ from random import randint as ri
 def crea_arreglo(f,c):
     lista=[]
     # no se especifica si desea que ingrese  algun dato en el ejercicio
-    f=int(input("f="))
-    c=int(input("c="))
     for i in range (f):
         a=[0]*c
         lista.append(a)
         for j in range(c):
             lista[i][j]=ri(100,900)
-    
+    return lista
